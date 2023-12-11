@@ -36,4 +36,4 @@ $ pomodoro
 
 ## Example
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![example](./src/screenshot/Screenshot1.png)
