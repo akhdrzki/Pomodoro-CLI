@@ -1,0 +1,21 @@
+{
+  "name": "pomodoro-shell",
+  "version": "1.0.0",
+  "description": "Personal Pomodoro Timer in terminal",
+  "main": "./bin/index.js",
+  "type": "module",
+  "bin": {
+    "pomodoro": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "akhdrzki",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.12"
+  }
+}
