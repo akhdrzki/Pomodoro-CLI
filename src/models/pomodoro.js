@@ -1,5 +1,5 @@
-export default class Pomodoro {
-	constructor (totalDuration) {
+export class Pomodoro {
+	constructor(totalDuration) {
 		this.totalDuration = totalDuration;
 		this.currentDuration = 0;
 	}
@@ -12,12 +12,14 @@ export default class Pomodoro {
 
 	tick() {
 		console.clear();
-		console.log(`Menit ke ${Math.floor(this.totalDuration / 60)} menit ${this.totalDuration % 60} detik`);
+		console.log(`${Math.floor(this.totalDuration / 60)} minute ${this.totalDuration % 60} second`);
 		this.totalDuration--
 
-		if (this.totalDuration <= this.currentDuration) {
+		if (this.totalDuration < this.currentDuration) {
 			this.stop();
-			console.log('Done')
+			console.clear();
+			console.log('Done');
+
 		}
 	}
 
@@ -25,3 +27,16 @@ export default class Pomodoro {
 		clearInterval(this.IntervalId);
 	}
 }
+
+// converting minute into second
+export const minuteToSec = (minute) => {
+  let second = minute * 60;
+  return second;
+}
+
+
+
+
+
+
+
